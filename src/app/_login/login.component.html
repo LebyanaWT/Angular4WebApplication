@@ -1,0 +1,71 @@
+
+<!-- <div class="row custom-row">
+    <div class= "col-sm-5 custom-container jumbotron">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <section>
+          <form novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <legend>Sign In</legend>
+            <fieldset>
+              <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control"  formControlName="username"/>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" formControlName="password"/>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary"  [disabled]="!customerForm.valid" >Sign Up <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+            <button type="button" class="btn btn-warning" (click)="redirectUserPage()">Sign in</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div> -->
+
+
+  <div class="headerLogo">
+    <a href="http://shop.pnp.co.za">
+      <img src="./assets/logo.png" alt="Pick n Pay" >
+    </a>
+</div>
+<div class="wrapper" id="loginView">
+  <div class="h1 cachetBold">
+      Welcome to Pick n Pay Online
+  </div>
+  <div class="formContent">
+    <form novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+      <table class="formBlock">
+          <tr>
+              <td width="160"><label for="username">Email/username</label></td>
+              <td width="350"><input type="text" class="form-control"  formControlName="username" ></td>
+          </tr>
+          <tr>
+              <td><label for="password">Password</label></td>
+              <td><input type="password" class="form-control"  formControlName="password" ></td>
+          </tr>
+
+      </table>
+      <div class="btnContainer">
+          <button type="submit" name="submit" (click)="redirectProductPage()"    id="loginButton">Log in</button>
+      </div>
+
+    </form>
+    <div class="btnContainer">
+     
+            <button name="" id="signUpButton"  (click)="redirectSignUpPage()">Sign Up</button>
+        
+   
+    </div>
+
+
+</div>
+</div>
+
+
+  

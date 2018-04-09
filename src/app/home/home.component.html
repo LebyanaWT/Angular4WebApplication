@@ -1,0 +1,160 @@
+<!-- <div class="headerLogo">
+        <a href="/home">
+            <img src="./assets/LogoPnP.png" alt="Pick n Pay">
+        </a>
+    </div> -->
+    <!-- <div  style="margin-left: 1200px">
+        Hi!  Please 
+        <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">log In</a> or 
+        <a routerLink="register" style="color: rgb(87, 3, 3); "  routerLinkActive="active">Sign Up</a>
+       
+        <div class="dropdown"><div class="bt" id="dropbtn">MY PNP<span class="glyphicon glyphicon-triangle-bottom" style="width:2px;"></span></div>
+            <div class="dropdown-content">
+                <a href="#/additems">My Lists</a>
+                <a href="#/AdminLogin">My Trolley</a>
+                <a href="#">Current Orders</a>
+                <a href="#">Previous Purchases</a>
+                <a href="#">Personal Details</a>
+                <a href="#">Delivery Details</a>
+                <a href="#/listitems">FAQs</a>
+            </div>
+        </div>
+    </div>  -->
+
+    <br/>
+    <br/>
+
+<div class="row" >
+  <div class="topDrop" style="width: 2000px">
+      <ul class="nav nav-tabs" style="margin-top:-9px;margin-left:-15px;" id="list-home">
+        </ul>
+    </div>
+</div>  
+<nav class="navbar navbar-expand-sm  fixed-top">
+        <a class="navbar-brand"><img src="./assets/logo.png" alt="Pick n Pay"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div  style="margin-left: 680px">
+                        
+                        YOU ARE BROWSING:  GAUTENG | <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">log In</a> or 
+                        <a routerLink="register" style="color: rgb(87, 3, 3); "  routerLinkActive="active">Sign Up</a>
+                        <a routerLink="customer" style="color: rgb(87, 3, 3); "  routerLinkActive="active">View</a>
+                        <div class="dropdown"><div class="bt" id="dropbtn">MY PNP<span class="glyphicon glyphicon-triangle-bottom" style="width:2px;"></span></div>
+                            <div class="dropdown-content">
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">My List</a>
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">My Trolley</a>
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">Current Orders</a>
+                               
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">Delivery Details</a>
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">Current Orders</a>
+                                <a routerLink="login" style="color: rgb(87, 3, 3); "  routerLinkActive="active">FAQs</a>
+                               
+                            
+                            </div>
+                        </div>
+                    </div> 
+         
+        </div>
+      </nav>
+      
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 30px">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="first-slide" src="./assets/advert.jpg" alt="First slide">
+                </div>
+    </div>
+    <div class="carousel-item">
+            <img class="second-slide" src="./assets/LogoPnP.png" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+<br/><br/><br/>
+<div class="container" style="margin-left: 300px" >
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px" > R85.00 </strong></h1>
+          <img src="./assets/BabySoft2PlyToiletPaperWhite18s.jpg" style="width: 175px;height: 160px"/>
+          <p><strong style="color:maroon"> Baby Soft 2 Ply Toilet Paper White 18s</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+          <button type="button" (click)="redirectSignInPage()" class="btn btn-sm btn-block btn-outline-danger">Add To Trolley</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px">R24.99 </strong></h1>
+          <img src="./assets/PnP Brown Sugar 2kg.jpg" style="width: 175px;height: 160px"/>
+          <p><strong style="color:maroon"> PnP Brown Sugar 2kg</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 
+          <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+         
+          <button type="button" (click)="redirectSignInPage()"  class="btn btn-sm btn-block btn-outline-danger">Add To Trolley
+               
+          </button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px">R64.99 </strong></h1>
+          <img src="./assets/Nescafe Classic Coffee 200g.jpg" style="width: 175px;height: 160px"/>
+          <p><strong style="color:maroon">  Nescafe Classic Coffee 200g</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+          <button type="button" (click)="redirectSignInPage()" class="btn btn-sm btn-block btn-outline-danger">Add To Trolley</button>
+        </div>
+      </div>
+
+      <br/><br/>
+      <div class="card mb-4 box-shadow">
+       
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px">R60.00 </strong></h1>
+          <img src="./assets/OMO_Auto_Washing_Powder.jpg" style="width: 175px;height: 160px"/>
+          <p><strong style="color:maroon">  OMO Auto Washing Powder 3kg</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+          <button type="button" (click)="redirectSignInPage()" class="btn btn-sm btn-block btn-outline-danger">Add To Trolley</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px">R19.50 </strong></h1>
+          <img src="./assets/Nola_Mayonnaise.jpg" style="width: 175px;height: 160px"/>
+          <p><strong style="color:maroon"> Nola Original Mayonnaise 750g</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+          <button type="button" (click)="redirectSignInPage()" class="btn btn-sm btn-block btn-outline-danger">Add To Trolley</button>
+          
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><strong style="color:maroon;font-size: 25px">R36.99</strong> </h1>
+            <img src="./assets/weetbix.jpg" style="width: 125px;height: 160px"/>
+            <p><strong style="color:maroon"> Bokomo Family Pack WeetBix 900g</strong></p>
+          <button type="button" class=" btn-outline-danger" style="margin-left:-180px">-</button> 1 <button type="button" class=" btn-outline-danger">+</button>
+          <br/>
+          <br/>
+          <button type="button" (click)="redirectSignInPage()" class="btn btn-sm btn-block btn-outline-danger">Add To Trolley</button>  
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,106 @@
+<!-- <div class="row custom-row">
+  <div class= "col-sm-5 custom-container jumbotron">
+       
+    <form class="form-horizontal" novalidate [formGroup]="customerForm" (ngSubmit)="register()" >
+        <fieldset>
+          <legend>SignUp</legend>
+          <div class="form-group">
+            <label for="firstname">Firstname</label>
+            <input type="text"
+            class="form-control"
+            formControlName="firstname"/>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Lastname</label>
+              <input type="text"
+                     class="form-control"
+                     formControlName="lastname"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" formControlName="email"/>
+                  
+                  </div>
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control"  formControlName="username"/>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="text" class="form-control" formControlName="password"/>
+          </div>
+       
+          <div class="form-group checkbox">
+            <label>
+              <input type="checkbox"> Confirm that you've read the Terms and 
+              Conditions
+            </label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" (click)="register()"  [disabled]="!customerForm.valid" >Sign Up <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+            <button type="button" class="btn btn-warning" (click)="redirectUserPage()">Sign in<i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+        </div>
+         
+        </fieldset>
+        
+    </form>
+  </div>
+</div> -->
+
+<div class="headerLogo">
+    <a href="http://shop.pnp.co.za">
+        <img src="./assets/LogoPnP.png" alt="Pick n Pay">
+    </a>
+</div>
+<div class="wrapper" id="RegisterView">
+    <div class="h1 cachetBold">
+       <h1>Register for PicknPay Online</h1>
+       <p style="font-size: 13px">Sign up in seconds to start shopping online, and get groceries and more delivered to your door.</p>
+    </div>
+    <div class="formContent">
+        <form class="form-horizontal" novalidate [formGroup]="customerForm" (ngSubmit)="register()" >
+            <table class="formBlock">
+                <tr>
+                    <td width="160"><label for="username">firstname</label></td>
+                    <td width="350"><input type="text" class="form-control"  formControlName="firstname"   ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">lastname</label></td>
+                    <td><input type="text" class="form-control"  formControlName="lastname" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">email</label></td>
+                    <td><input type="email" class="form-control"  formControlName="email" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">username</label></td>
+                    <td><input type="text" class="form-control"  formControlName="username" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">password</label></td>
+                    <td><input type="password" class="form-control"  formControlName="password" ></td>
+                </tr>
+            </table>
+            <!-- <div class="btnContainer">
+                <button type="submit"style="width:100px" class="btn btn-primary" (click)="showSuccess()"  [disabled]="!customerForm.valid" >Sign Up <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>  
+                <button type="submit" class="btn btn-primary" (click)="showSuccess()"  [disabled]="!customerForm.valid" >Sign Up <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+            </div> -->
+            <div class="btnContainer">
+       
+              <button type="submit" name="" id="signUpButton" (click)="register()"  [disabled]="!customerForm.valid">Sign Up</button>
+              <button type="submit" name="" id="signUpButton" (click)="register()"  [disabled]="!customerForm.valid">Sign In</button>
+            </div>
+
+              
+        </form>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
